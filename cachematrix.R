@@ -39,7 +39,7 @@ cacheSolve <- function(x, ...) {
     
   }
   data <- x$get()
-  m <- solve(x)
+  m <- solve(data,...)
   x$setCachedMatrix(m)
   m
   
